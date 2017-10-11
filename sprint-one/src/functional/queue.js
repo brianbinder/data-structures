@@ -7,7 +7,7 @@ var Queue = function() {
   // Implement the methods below
 
   someInstance.enqueue = function(value) {
-    var newKey = Object.keys(storage).length;
+    var newKey = Object.keys(storage)[Object.keys(storage).length -1] + 1;
     storage[newKey] = value;
   };
 
